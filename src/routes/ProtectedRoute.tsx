@@ -1,4 +1,4 @@
-import { Navigate, Outlet } from "react-router-dom";
+import {  Outlet } from "react-router-dom";
 import { useAppSelector } from "../app/hooks";
 import { useAppDispatch } from "../app/hooks";
 import { openLoginPortal } from "../features/auth/authSlice";
