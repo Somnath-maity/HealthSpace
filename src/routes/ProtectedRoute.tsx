@@ -10,12 +10,12 @@ const ProtectedRoute = () => {
 
   useEffect(() => {
     if (!loading && !user) {
-      dispatch(openLoginPortal()); // auto open portal on protected access
+      dispatch(openLoginPortal()); 
     }
   }, [user, loading]);
 
   if (loading) return <div className="h-screen flex items-center justify-center">Loading...</div>;
-  if (!user) return null; // portal handles the UI, no redirect needed
+  if (!user) return null; 
 
   return <Outlet />;
 };

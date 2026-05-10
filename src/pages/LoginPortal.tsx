@@ -4,7 +4,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../services/firebase";
 import { useAppDispatch, useAppSelector } from "../app/hooks";
-import { setError, closeLoginPortal } from "../features/auth/authSlice";
+import { setError} from "../features/auth/authSlice";
 import { useNotifications } from "../hooks/useNotifications";
 import { addNotification } from "../features/notifications/notificationsSlice";
 

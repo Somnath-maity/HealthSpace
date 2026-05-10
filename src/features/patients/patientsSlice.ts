@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction} from "@reduxjs/toolkit";
 import type { Patient } from "../../types/patient";
-import { mockPatients } from "./MockPatients";
+import { mockPatients } from "./mockPatients";
 
 type ViewMode = "grid" | "list";
 
@@ -13,7 +13,7 @@ interface PatientsState {
 }
 
 const initialState: PatientsState = {
-  patients: mockPatients, // preloaded — no API call needed
+  patients: mockPatients,
   viewMode: "grid",
   selectedPatient: null,
   searchQuery: "",
